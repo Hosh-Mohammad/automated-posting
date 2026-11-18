@@ -136,6 +136,11 @@ Date and time are UTC. Each platform returns its own result object.
   ]
 }
 
+### Screenshots
+
+![API response](screenshots/response.png)
+![Posted Gist](screenshots/gist.png)
+
 ## Validation (HTTP 422)
 
 - Message must be non-empty and at most 200 characters.

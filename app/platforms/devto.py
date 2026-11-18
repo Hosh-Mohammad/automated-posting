@@ -35,4 +35,4 @@ class DevToPlatform(Platform):
             raise api_error(response.status_code, describe_error(response))
 
         data = response.json()
-        return PostOutcome(url=data.get("url"), public_access=bool(data.get("published")))
+        return PostOutcome(url=data.get("url"), public_access=data.get("published") is not False)
